@@ -1,0 +1,38 @@
+<template>
+  <div class="test-container">
+    <div v-for="t in types" :key="t" class="item">
+      <Icon :type="t" />
+      <label>{{ t }}</label>
+    </div>
+  </div>
+</template>
+
+<script>
+import Icon, { types } from "./index.vue";
+
+export default {
+  components: {
+    Icon,
+  },
+  data() {
+    return {
+      types,
+    };
+  },
+};
+</script>
+
+<style scoped>
+.test-container {
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+  width: 580px;
+  flex-wrap: wrap;
+}
+
+.item {
+  margin: 1em;
+  text-align: center;
+}
+</style>
