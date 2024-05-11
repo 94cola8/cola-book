@@ -1,10 +1,9 @@
-<template><h1 ref="cola">Home</h1></template>
+<template><h1>Home</h1></template>
 <script>
 export default {
   name: "Home",
   mounted() {
     this.$sayHello();
-    console.log(this.$refs);
   },
 };
 </script>
