@@ -11,10 +11,9 @@
     </div>
   </div>
 </template>
+
 <script>
-export default {
-  name: "Layout",
-};
+export default {};
 </script>
 
 <style lang="less" scoped>
